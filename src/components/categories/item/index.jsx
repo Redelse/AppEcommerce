@@ -1,6 +1,7 @@
 import { TouchableHighlight, ImageBackground,Text } from "react-native";
 
 import { styles } from "./styles";
+import { COLORS } from "../../../themes";
 
 const CategoryItem = ({ 
     id,
@@ -11,7 +12,8 @@ const CategoryItem = ({
         return (
             <TouchableHighlight
                 onPress={() => onSelectCategory(id)}
-                style={[styles.container, { backgroundColor }]}>
+                style={[styles.container, { backgroundColor }]}
+                underlayColor={COLORS.primary}>
                 <ImageBackground
                     source={{ uri: backgroundImage }}
                     style={styles.ImageBackground}

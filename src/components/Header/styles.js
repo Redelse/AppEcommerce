@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
     },
     title: {
         fontSize: 25,
-        color: COLORS.white,
+        color: COLORS.text,
         fontWeight:'bold',
     }
 });
