@@ -1,19 +1,21 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
+import { COLORS } from '../../themes';
 
 export const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-     
-    },
-    listCategory: {
-      gap: 15,
-      paddingBottom: 20,
-    },
-    categoryContainer: {
-      marginHorizontal:15,
-      marginTop: 15,
-    
-    },
-  
-  });
+  container: {
+    flex: 1,
+    backgroundColor: COLORS.background,
+  },
+  categoryContainer: {
+    marginTop: 15,
+    marginHorizontal: 15,
+  },
+  listCategory: {
+    gap: 15,
+    paddingBottom: 20,
+  },
+  categoryItemLandscape: {
+    height: 100,
+  },
+});
